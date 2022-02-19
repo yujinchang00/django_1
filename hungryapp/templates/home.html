@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for bulletin in board.all %}
+<br>
+<div class="container">
+    <p>{{ bulletin.category }}</p>
+    <h1 class="title is-4">{{ bulletin.title }}</h1>
+    <p>{{ bulletin.points }}</p>
+    <p>{{ bulletin.summary }} <a href="{% url 'detail' bulletin.id %}">...more</a></p>
+</div>
+{% endfor %}
+
+{% endblock %}

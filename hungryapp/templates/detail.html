@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+<div class="container">
+    <p>{{ board_detail.category }}</p>
+    <h1 class="title">{{ board_detail.title }}</h1>
+    <p>{{ board_detail.pub_date }}</p>
+    <p>{{ board_detail.points }}</p>
+    <p>{{ board_detail.summary }}</p>
+    <a href="{% url 'home' %}">홈으로</a>
+</div>
+
+{% endblock %}

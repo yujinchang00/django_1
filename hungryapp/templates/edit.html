@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+<div class="container">
+    <form action="{% url 'update' board.id %}">
+        <h2>카테고리: 
+            <select name="category" value = '{{ board.category }}'>
+                <option value="KR">한식</option>
+                <option value="EA">양식</option>
+                <option value="CH">중식</option>
+                <option value="JP">일식</option>
+                <option value="SF">분식</option>
+                <option value="BR">베이커리</option>
+                <option value="BEV">커피음료</option>
+                <option value="OTHERS">그외</option>
+            </select>
+        </h2>
+        <h2 class="title">가게 이름:
+            <input type="text" name="title" class="input" value="{{ board.title }}">
+        </h2>
+        <h2>별점: 
+            <select name="points" value="{{ board.points }}">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </h2>
+        <h2>내용: </h2>
+        <textarea class="textarea" name="body" rows="10">{{ board.body }}</textarea>
+        <br>
+        <br>
+        <input class="button" type="submit" value="작성하기">
+    </form>
+</div>
+
+{% endblock %}

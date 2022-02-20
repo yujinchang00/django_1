@@ -21,4 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', hungryapp.views.home, name='home'),
     path('board/<int:board_id>', hungryapp.views.detail, name='detail'),
+    path('board/new/', hungryapp.views.new, name='new'),
+    path('board/create/', hungryapp.views.create, name='create'),
+    path('board/delete/<int:board_id>', hungryapp.views.delete, name='delete'),
+    path('board/edit/<int:board_id>', hungryapp.views.edit, name='edit'),
+    path('board/update/<int:board_id>', hungryapp.views.update, name="update"),
 ]

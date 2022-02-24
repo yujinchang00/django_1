@@ -7,8 +7,8 @@
     <h1 class="title">{{ board_detail.title }}</h1>
     <p>{{ board_detail.pub_date }}</p>
     <p>{{ board_detail.points }}</p>
-    <p>{{ board_detail.summary }}</p>
-    <a href="{% url 'home' %}">홈으로</a>
+    <p>{{ board_detail.body }}</p>
+    <a href="{% url 'lists' %}">홈으로</a>
 </div>
 
 {% endblock %}

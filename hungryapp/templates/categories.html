@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <p><a href="{% url 'lists' board_category='KR' %}">한식</a></p>
+    <p><a href="{% url 'lists' board_category='EA' %}">양식</a></p>
+    <p><a href="{% url 'lists' board_category='CH' %}">중식</a></p>
+    <p><a href="{% url 'lists' board_category='JP' %}">일식</a></p>
+    <p><a href="{% url 'lists' board_category='SF' %}">분식</a></p>
+    <p><a href="{% url 'lists' board_category='BR' %}">베이커리</a></p>
+    <p><a href="{% url 'lists' board_category='BEV' %}">커피음료</a></p>
+    <p><a href="{% url 'lists' board_category='OTHERS' %}">그외</a></p>
+</div>
+
+{% endblock %}

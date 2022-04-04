@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <form action="{% url 'update' blog.id %}">
+        <h1 class="title"> 제목 : </h1>
+        <input type="text" name="title" class="input" value="{{ blog.title }}">
+        <br>
+        <br>
+        <h1 class="title"> 내용 : </h1>
+        <textarea clas="textarea" name="body" rows="10">{{ blog.body }}</textarea>
+        <br>
+        <br>
+        <input class="button" type="submit" value="작성하기">
+    </form>
+</div>
+
+{% endblock %}

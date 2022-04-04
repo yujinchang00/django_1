@@ -1,0 +1,14 @@
+<h1>입력한 텍스트 : </h1>
+{{ fulltext }}
+<br><br>
+<h1>텍스트의 총 단어수 : </h1>
+{{ total }}개
+<br><br>
+<h1>단어별 횟수 : </h1>
+{% for word, count in dict %}
+{{ word }} - {{ count }}
+<br>
+{% endfor %}
+
+<br>
+<a href="{% url 'home' %}"> 다시하기 </a>

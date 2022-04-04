@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf=8">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      @font-face {
+        font-family: 'OTWelcomeRA';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      #wrapper {
+        width : 500px;
+        position : relative;
+        left : 50%;
+        margin-left:-250px;
+      }
+      #title{
+        height: 300px;
+        background-image: url('C:\VSCode_workspace\CS_2021\211124\login.jpeg');
+        background-size: 500px;
+        display: block;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      h1{
+        font-family:'OTWelcomeRA';
+        font-style: italic;
+        color: black;
+        font-size: 40px;
+        padding-top: 230px;
+      }
+      #login{
+        font-family:'S-CoreDream-3Light';
+        line-height: 200%;
+      }
+      fieldset {
+        font-weight: bold;
+        text-align: center;
+      }
+     </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="title">
+        <h1>로그인</h1>
+      </div>
+      <div id="login">
+        <form>
+          <fieldset>
+            학번 <br> <input type="text" id="name" placeholder="1928028"> <br>
+            비밀번호 <br> <input type="password" id="password"> <br>
+            성별 <br>
+            <input type="radio" id="male" name="sex"> 남성
+            <input type="radio" id="female" name="sex"> 여성
+            <input type="radio" id="etc" name="sex"> 기타
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <br><br><br>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<h1>Word Counter</h1>
+
+<a href="{% url 'about' %}">ABOUT</a>
+<br>
+<br>
+<form action="{% url 'result' %}">
+    <textarea cols="50" rows="10" name="fulltext" placeholder="문자열을 입력하세요."></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Count!">
+</form>

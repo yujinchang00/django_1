@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h1 class="title">{{ blog_detail.title }}</h1>
+    <p>{{ blog_detail.pub_date }}</p>
+    <p>{{ blog_detail.body }}</p>
+    <a href="{% url 'home' %}">홈으로</a>
+</div>
+
+{% endblock %}
